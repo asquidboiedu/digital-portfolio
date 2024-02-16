@@ -3,31 +3,29 @@
   <html lang="en">
   <head>
   <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KY6M2XMRZ3"></script>
-    <script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KY6M2XMRZ3"></script>
+  <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
     
       gtag('config', 'G-KY6M2XMRZ3');
-    </script>
-    <link rel="icon" href="../../icon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-red.min.css" />
-   <link rel="stylesheet" href="../style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This a website with a bunch of widgets and stuff">
-    <meta name="keywords" content="Something">
-    <meta name="author" content="Me">
+  </script>
+  <link rel="icon" href="../../icon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-red.min.css" />
+  <link rel="stylesheet" href="../style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This a website with a bunch of widgets and stuff">
+  <meta name="keywords" content="Something">
+  <meta name="author" content="Me">
 
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>About | Something</title>
-    
-    <style>
-        
+    <title>About | Something</title> 
+    <style>  
         .parallax {
         /* The image used */
             background-image: url("https://images.pexels.com/photos/12992471/pexels-photo-12992471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=3");
@@ -41,7 +39,7 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
-        			        .dropdown {
+        .dropdown {
           float: left;
           overflow: hidden;
         }
@@ -295,13 +293,7 @@
     <div class="parallax"></div>
 
     <section>
-      <h2>Journal Writes</h2>
-      <hr>
-      <a href="petstore.html" style="color: white">#1 | 500 Mice</a>
-      <br>
-      <a href="infant.html" style="color: white">#2 | What not to do with infants</a>
-      <br>
-      add more here UwU
+      <h2>Journal Writes | Nav</h2>
       
     </section>
 
@@ -312,8 +304,46 @@
     <br>
     <br>
 
+    <section style="background-color: #121212;">
+        			<h2>Journal Writes</h2>
+				
+ 				<section style="padding: 25px; background-color: #F2EEE7; box-shadow: 7px 7px 7px 7px black; border-radius: 10px">
+        					<div class="wrapper">
+					            <ul class="list">
+					                <li><a href="subpages/posts/middle-school.html" class="article">#1</a></li>
+					                <li><a href="subpages/posts/MMS.html" class="article">#2</a></li>
+					                <li><a href="subpages/posts/ems.html" class="article">#3</a></li>
+					                <li><a href="subpages/posts/Rhcoding.html" class="article">#4</a></li>
+					                <li><a href="subpages/posts/Rhcoding2.html" class="article">#5</a></li>
+					                <li><a href="subpages/posts/MHpost2.html" class="article">#6</a></li>
+					                <li><a href="subpages/posts/gamedev.html" class="article">#7</a></li>
+					                <li><a href="subpages/posts/500.html" class="article">#8</a></li>
+					                <li><a href="subpages/posts/inspiration.html" class="article">#9</a></li>
+					                <li><a href="subpages/posts/scams.html" class="article">#10</a></li>
+					                <li><a href="subpages/posts/h2o.html" class="article">#11</a></li>
+							            <li><a href="subpages/posts/fusion-reactor.html" class="article">#12</a></li>
+							            <li><a href="subpages/posts/generic_blog_post.html" class="article">#13</a></li>
+							            <li><a href="subpages/posts/sleep.html" class="article">#14</a></li>
+				                  <li><a href="subpages/posts/induction_heater.html" class="article">#15</a></li>
+					            </ul>
+					            <button id="next">Show More</button>
+					        </div> 	
+        			</section> 
+
     <footer>
         <p>&copy;this is a website</p>
     </footer>
   </body>
+  <script>
+    list.slice(0, numToShow).show();
+
+       			button.click(function(){
+           			var showing = list.filter(':visible').length;
+            			list.slice(showing - 1, showing + numToShow).fadeIn();
+            			var nowShowing = list.filter(':visible').length;
+            			if (nowShowing >= numInList) {
+              				button.hide();
+            			}
+        		});
+  </script>
 </html>
